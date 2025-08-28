@@ -1819,7 +1819,7 @@ const TenantDashboard = () => {
           </div>
 
           {/* Enhanced Properties and Other Sections - Never visible */}
-          <div className="hidden grid grid-cols-1 xl:grid-cols-2 gap-12">
+          <div className="hidden grid-cols-1 xl:grid-cols-2 gap-12">
             {/* Favourite Properties Section */}
             <div className={`backdrop-blur-sm rounded-3xl shadow-2xl p-8 ${darkMode 
               ? 'bg-slate-800/80 border border-slate-700/50 text-slate-100' 
