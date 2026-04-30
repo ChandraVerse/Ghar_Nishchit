@@ -11,6 +11,8 @@ import DarkModeProvider from './DarkModeContext.jsx';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import Chatbot from '../../../Ai/Chatbot.jsx';
+
 const Landing = lazy(() => import('./components/landing'));
 const Login = lazy(() => import('./components/Auth/Login'));
 const SignUp = lazy(() => import('./components/Auth/SignUp'));
@@ -174,6 +176,7 @@ export default function App() {
             />
           </Routes>
         </Suspense>
+        <Chatbot />
       </div>
     </DarkModeProvider>
   );
