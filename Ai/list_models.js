@@ -1,4 +1,7 @@
-const apiKey = "API_KEY"
+import env from "dotenv";
+env.config();
+
+const apiKey = process.env.VITE_API_KEY;
 
 async function main() {
     const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models?key=${apiKey}`);
